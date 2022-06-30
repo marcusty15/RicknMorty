@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
-import Search from './components/Search/Search';
+
 import Personajes from './pages/Personajes';
 import Ubicaciones from './pages/Ubicaciones/Ubicaciones';
 

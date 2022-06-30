@@ -21,15 +21,10 @@ const UseProvider = ({ children }) => {
       "https://rickandmortyapi.com/api/character"
     );
     setPersonajes(response.data.results);
-    setImg(response.data.results)
-    
   };
   
   useEffect(() => {
     obtenerUbicaciones();
-  }, []);
-
-  useEffect(() => {
     obtenerPersonajes();
   }, []);
 

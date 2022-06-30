@@ -5,9 +5,9 @@ import { Context } from '../../store/Store'
 import './Ubicaciones.css'
 
 const Ubicaciones = () => {
-    const {setUbicaciones, ubicaciones} = useContext(Context)
-    const {personajes} = useContext(Context)
+    const {setUbicaciones, ubicaciones , personajes, img, setImg} = useContext(Context)
     
+    console.log(setImg)
     return (
       <>
       
@@ -16,7 +16,7 @@ const Ubicaciones = () => {
         <div className='d-flex flex-wrap justify-content-between'>
           {
             ubicaciones.map(ubicacion => (
-              <CardUbicaciones key={ubicacion.id} {...ubicacion} />
+              <CardUbicaciones key={ubicacion.id} {...ubicacion}  />
             ))
           }
           {
