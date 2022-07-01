@@ -1,13 +1,13 @@
 import axios from 'axios'
 import React, { useContext, useEffect, useState } from 'react'
+import CardPersonaje from '../../components/CardPersonaje/CardPersonaje'
 import CardUbicaciones from '../../components/CardUbicaciones'
 import { Context } from '../../store/Store'
 import './Ubicaciones.css'
 
 const Ubicaciones = () => {
-    const {setUbicaciones, ubicaciones , personajes, img, setImg} = useContext(Context)
+    const {setUbicaciones, ubicaciones , personajes} = useContext(Context)
     
-    console.log(setImg)
     return (
       <>
       
@@ -16,9 +16,10 @@ const Ubicaciones = () => {
         <div className='d-flex flex-wrap justify-content-between'>
           {
             ubicaciones.map(ubicacion => (
-              <CardUbicaciones key={ubicacion.id} {...ubicacion}  />
+              <CardUbicaciones key={ubicacion.id} {...ubicacion}/>
             ))
-          }
+            
+          },
           {
             personajes.map(personaje => (
               <CardUbicaciones key={personaje.id} {...personaje} />
