@@ -4,7 +4,14 @@
     margin-bottom: 50px;
 }
 
+h1{
+    margin-top: 200px;
+}
 h2{
-    margin-left: 480px;
-    margin-top: 50px;
+    margin-left: 40px;
+    margin-top: 70px;
+}
+
+.boton{
+    background-color: rgb(162, 165, 128);
 }

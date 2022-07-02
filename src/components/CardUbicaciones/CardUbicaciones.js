@@ -8,7 +8,7 @@ const CardUbicaciones = (props) => {
   
   return (
     <>
-    <div className="card mb-3" style={{width: "18rem"}} key={id}>
+    <div className="card mb-3" style={{width: "15rem"}} key={id}>
     <img  src={personajes[index].image} className="card-img-top" alt={name}/>
         <div className="card-body cards">
             <h5 className="card-title ">Nombre: {name}</h5>

@@ -13,15 +13,28 @@ const Personajes = () => {
 
   return (
     <div className='container'>
-      <h1>proyecto de Rick and Morty</h1>
-      <h2>Buscador de personajes</h2>
+      <h1 className='text-white text-center'>RICK AND MORTY PROJECT</h1>
+      <h2 className='text-white text-center mb-4'>Characters search</h2>
       <input type='text' onChange={e=>setSearch(e.target.value)} className='search'placeholder='Ingrese el nombre del personaje' />
       <div className='mb-3'>
-        <h2>Filtros</h2>
-      <button className='btn btn-primary me-3 ' onClick={verTodos}>Ver todos</button>
-        <button className='btn btn-primary me-3' onClick={() => statusPersonaje('Alive')}>Vivos</button>
-        <button className='btn btn-primary me-3' onClick={() => statusPersonaje('Dead')}>Muertos</button>
-        <button className='btn btn-primary' onClick={() => statusPersonaje('unknown')}>Desconocido</button>
+      <h2 className='text-white mb-5'>filter</h2>
+      <p>
+        <button className="btn btn-dark boton w-25" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          FILTER
+        </button>
+      </p>
+        <div className="collapse w-25" id="collapseExample">
+        <div className="card card-body bg-dark">
+        <div className='d-flex'>
+        <button className='btn btn-dark w-25 mb-2 me-2 boton' onClick={verTodos}>All</button>
+        <button className='btn btn-dark w-25 mb-2 me-2 boton' onClick={() => statusPersonaje('Alive')}>live</button>
+        <button className='btn btn-dark w-25 mb-2 me-2 boton' onClick={() => statusPersonaje('Dead')}>Dead</button>
+        <button className='btn btn-dark w-25 mb-2 boton' onClick={() => statusPersonaje('unknown')}>???</button>        
+        </div>
+        </div>
+      </div>
+        
+      
         </div>
       <div className='d-flex flex-wrap justify-content-between'>
         

@@ -1,4 +1,22 @@
+@font-face {
+    font-family: 'rick';
+    src: url('../Fonts/get_schwifty.ttf');
+}
+
 .cards{
     background-color: rgb(162, 165, 128);
     
 }
+
+h1, h2{
+    font-family: 'rick';
+    font-size: 70px;
+}
+
+.card:hover {
+    outline: 0px solid transparent;   
+    border: 5px solid #a8da4c;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.1);
+  }
