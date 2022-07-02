@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/RicknMorty/static/css/main.0315dcf3.css",
-    "main.js": "/RicknMorty/static/js/main.7b06c3eb.js",
+    "main.css": "/RicknMorty/static/css/main.7a103649.css",
+    "main.js": "/RicknMorty/static/js/main.5b8502b8.js",
     "static/js/787.440d89c7.chunk.js": "/RicknMorty/static/js/787.440d89c7.chunk.js",
+    "static/media/ricknmorty.webp": "/RicknMorty/static/media/ricknmorty.e3d5c946874e2c80c685.webp",
+    "static/media/get_schwifty.ttf": "/RicknMorty/static/media/get_schwifty.c3d1dfc692e3547fed16.ttf",
     "index.html": "/RicknMorty/index.html",
-    "main.0315dcf3.css.map": "/RicknMorty/static/css/main.0315dcf3.css.map",
-    "main.7b06c3eb.js.map": "/RicknMorty/static/js/main.7b06c3eb.js.map",
+    "main.7a103649.css.map": "/RicknMorty/static/css/main.7a103649.css.map",
+    "main.5b8502b8.js.map": "/RicknMorty/static/js/main.5b8502b8.js.map",
     "787.440d89c7.chunk.js.map": "/RicknMorty/static/js/787.440d89c7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0315dcf3.css",
-    "static/js/main.7b06c3eb.js"
+    "static/css/main.7a103649.css",
+    "static/js/main.5b8502b8.js"
   ]
 }
