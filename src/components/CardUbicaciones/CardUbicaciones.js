@@ -3,14 +3,13 @@ import { Context } from '../../store/Store';
 import './CardUbicaciones.css'
 
 const CardUbicaciones = (props) => {
-    const {name, type, dimension,id} = props;
+    const {name, type, dimension,id, index} = props;
     const {personajes} = useContext(Context)
-    const {image} = personajes[1]
   
   return (
     <>
     <div className="card mb-3" style={{width: "18rem"}} key={id}>
-    <img  src={image} className="card-img-top" alt={name}/>
+    <img  src={personajes[index].image} className="card-img-top" alt={name}/>
         <div className="card-body cards">
             <h5 className="card-title ">Nombre: {name}</h5>
             <p className="card-text mb-1">Tipo: {type}</p>

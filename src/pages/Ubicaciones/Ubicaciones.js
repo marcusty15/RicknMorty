@@ -1,12 +1,10 @@
-import axios from 'axios'
-import React, { useContext, useEffect, useState } from 'react'
-import CardPersonaje from '../../components/CardPersonaje/CardPersonaje'
+import React, { useContext} from 'react'
 import CardUbicaciones from '../../components/CardUbicaciones'
 import { Context } from '../../store/Store'
 import './Ubicaciones.css'
 
 const Ubicaciones = () => {
-    const {setUbicaciones, ubicaciones , personajes} = useContext(Context)
+    const {ubicaciones} = useContext(Context)
     
     return (
       <>
@@ -15,16 +13,11 @@ const Ubicaciones = () => {
       <h2 className='h2'>UBICACIONES</h2>
         <div className='d-flex flex-wrap justify-content-between'>
           {
-            ubicaciones.map(ubicacion => (
-              <CardUbicaciones key={ubicacion.id} {...ubicacion}/>
-            ))
-            
-          },
-          {
-            personajes.map(personaje => (
-              <CardUbicaciones key={personaje.id} {...personaje} />
+            ubicaciones.map((ubicacion,index) => (
+              <CardUbicaciones key={ubicacion.id} {...ubicacion} index={index}/>
             ))
           }
+          
         </div>
       </div>
       </>
